@@ -3,13 +3,13 @@ class MaxNumber{
   def findMaxNumber(list: List[Int]): Int = {
 
     val intArray: Array[Int] = list.toArray
-   var tmp :Int=intArray(0)
+   var max :Int=intArray(0)
 
     for (i <- 1 until intArray.length) {
-      if (intArray(i) > tmp)
-        tmp = intArray(i)
+      if (intArray(i) > max)
+        max = intArray(i)
     }
-    tmp
+    max
   }
   }
 
